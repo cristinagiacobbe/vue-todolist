@@ -4,6 +4,7 @@ export default {
 
   data() {
     return {
+
       todolist: [
         {
           text: "Ascoltare la registrazione Boolean del 23/01/24",
@@ -26,18 +27,26 @@ export default {
           done: true,
         }
       ]
-    }
+    };
   }
-}
+
+};
 </script>
 
+
 <template>
-  <h1>My todolist</h1>
   <ul>
-    <li v-for="action in todolist">
-      {{ action.text }}
+    <li v-for="todo in todolist">
+      <span :class="{ line: todo.done }">{{ todo.text }}</span>
+
     </li>
   </ul>
 </template>
 
-<style></style>
+
+<style>
+.line {
+  text-decoration: line-through;
+}
+</style>
+
