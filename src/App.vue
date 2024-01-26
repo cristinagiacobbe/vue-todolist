@@ -4,7 +4,6 @@ export default {
 
   data() {
     return {
-
       todolist: [
         {
           text: "Ascoltare la registrazione Boolean del 23/01/24",
@@ -28,6 +27,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    removeTodo(i) {
+      this.todolist.splice(i, 1)
+    }
   }
 
 };
@@ -35,8 +39,10 @@ export default {
 
 
 <template>
+  <h1>Todolist</h1>
   <ul>
-    <li v-for="todo in todolist">
+    <li v-for="(todo, index) in todolist">
+      <span v-on:click="removeTodo(index)"> x </span>
       <span :class="{ line: todo.done }">{{ todo.text }}</span>
 
     </li>
