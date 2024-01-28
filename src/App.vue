@@ -32,8 +32,9 @@ export default {
       this.todolist.splice(i, 1);
     },
     addTodo() {
-      this.finalTodo = [...this.todolist, ...this.userTodo]
-      console.log(this.finalTodo);
+      this.todolist.text = this.userTodo.text
+      this.todolist.done = this.userTodo.done
+      console.log(this.todolist);
     },
   }
 }
