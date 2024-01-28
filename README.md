@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+MILESTONE 3
+Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Bonus:
+1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
+2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Nota:
+Non ci sono nuovi concetti, ma solo quelli coperti fino ad oggi in vue.
+Leggete la documentazione (É vostra amica), di seguito le pagine di riferimento che vi torneranno utili per svolgere l'esercizio.
+https://vuejs.org/guide/essentials/template-syntax.html
+https://vuejs.org/guide/essentials/class-and-style.html
+https://vuejs.org/guide/essentials/conditional.html
+https://vuejs.org/guide/essentials/list.html
+https://vuejs.org/guide/essentials/event-handling.html
+https://vuejs.org/guide/essentials/forms.html
