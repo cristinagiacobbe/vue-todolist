@@ -7,24 +7,18 @@ export default {
       todolist: [
         {
           text: "learn HTML",
-          done: true,
+          done: false,
         },
         {
           text: "learn CSS",
-          done: true,
+          done: false,
         },
         {
           text: "learn Javascript",
-          done: true,
+          done: false,
         },
       ],
-      userTodo: [
-        {
-          text: "",
-          done: true,
-        }
-      ],
-      finalTodo: []
+      userTodo: { text: "", done: false },
     }
   },
   methods: {
@@ -32,12 +26,12 @@ export default {
       this.todolist.splice(i, 1);
     },
     addTodo() {
-      this.todolist.text = this.userTodo.text
-      this.todolist.done = this.userTodo.done
-      console.log(this.todolist);
-    },
+      this.todolist.unshift(this.userTodo);
+    }
   }
 }
+
+
 </script>
 
 
