@@ -26,10 +26,16 @@ export default {
       this.todolist.splice(i, 1);
     },
     addTodo() {
-      this.todolist.unshift(this.userTodo);
+      if (this.userTodo.text != "") {
+        this.todolist.unshift(this.userTodo);
+      } else {
+        alert("stai inserendo una stringa vuota")
+      }
     }
+
   }
 }
+
 
 
 </script>
